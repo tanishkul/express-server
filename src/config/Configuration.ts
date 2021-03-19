@@ -4,7 +4,7 @@ import { IConfig } from './IConfig';
 config();
 
 const Configuration: IConfig = Object.freeze({
-  key: process.env.key,
+  key: process.env.KEY,
   mongoUri: process.env.MONGO_URL,
   port: process.env.PORT,
 });

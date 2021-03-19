@@ -23,7 +23,7 @@ class TraineeController {
         res.status(200).send(successHandler('Successfully fetch Users', data));
         console.log('Successfully fetch Users');
       } else {
-        const id = JSON.parse(req.query.id) - 1;
+        const id = JSON.parse(req.query.id as string) - 1;
         console.log(id);
         res
           .status(200)
